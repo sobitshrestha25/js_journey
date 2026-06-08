@@ -71,3 +71,41 @@ function no(x){
 }
     no(5);
 
+//reverse 
+function reverseString(str) {
+    return str.split('').reverse().join('');
+}
+
+console.log(reverseString("hello"));
+//palindrome
+function isPalindromeShort(str) {
+    // Reverse the string and compare it to the original
+    return str === str.split('').reverse().join('');
+}
+
+console.log(isPalindromeShort("madam")); 
+//area of circle
+function area(r){
+return 3.14*r*r;
+}
+console.log(area(25));
+//percentage
+function percentage(m,t){
+    return (m/t)*100;
+}
+console.log(percentage(32,100));
+//minimum of three number
+function num(a,b,c){
+    if(a<b && a<c){
+        console.log(a)
+    } else if(b<a && b<c){
+        console.log(b);
+    }
+    else{
+        console.log(c);
+    }
+}
+    num(3,4,5);
+    
+
+
