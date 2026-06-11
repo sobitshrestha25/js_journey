@@ -84,9 +84,14 @@ const passsed= markks.filter(function(mark){
     return mark >=40;
 
 });
-const totall = passsed.reduce(function(sum,mark)){
+const totall = passsed.reduce(function(sum,mark){
     return sum+mark;
 },0);
 const average = total/passed.length;
-console.log('Passed students marks: ${passsed}');
-console.log('Average marks of passed student: ${average}');
+console.log(`Passed students marks: ${passsed}`);
+console.log(`Average marks of passed student: ${average}`);
+//spread operator 
+let nepali = ["dal", "bhat", "tarkari"];
+let western = ["pizza", "burger"];
+let allfood = [...nepali, ...western];
+console.log(allfood);
